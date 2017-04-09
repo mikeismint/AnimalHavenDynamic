@@ -1,0 +1,25 @@
+@import '../layout/grid';
+
+table {
+  width: 100%;
+
+  td {
+    padding: 0.5em;
+  }
+
+  .odd {
+    background-color: $blue_light;
+  }
+
+  .even { }
+
+  .label {
+    text-align: right;
+    font-weight: 700;
+    color: $blue_dark; 
+  }
+
+  .data {
+    text-align: left;
+  }
+}

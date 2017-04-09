@@ -1,0 +1,43 @@
+@import 'grid';
+@import '../variables/variables';
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+body{
+  font-size: 1em;
+  background-color:grey;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 0.9em;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+.container {
+  @extend %make_container;
+  margin: $padding_med auto;
+  width: 100%;
+  max-width: $width_max;
+  background-color: white;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+

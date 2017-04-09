@@ -1,0 +1,29 @@
+@import 'grid';
+@import '../variables/variables';
+
+.footer-row {
+  background-color: darkblue;
+}
+.footer-row .logo {
+  @include make_column( 12/3 );
+}
+
+.footer-row .navigation {
+  @include make_column( 12/7 );
+}
+
+.footer-row .virginLink {
+  @include make_column( 12/2 );
+
+  img {
+    float: right;
+    width: 100%;
+    max-width: 106px;
+    height: auto;
+  }
+}
+
+.footer-row .charitydetails {
+  @include make_column( 1/1 );
+  text-align: right;
+}

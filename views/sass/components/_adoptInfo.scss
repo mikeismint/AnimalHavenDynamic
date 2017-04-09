@@ -1,0 +1,11 @@
+.adoptInfo {
+  background-color: $green_light;
+  color: $blue_dark;
+
+  li:before {
+    content: ">";
+    padding-right: $padding_sml;
+    line-height: 1.5em;
+  }
+
+}

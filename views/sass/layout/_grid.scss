@@ -1,0 +1,33 @@
+$padding_lge: 25px;
+$padding_med: 15px;
+$padding_sml:  5px;
+
+%make_container {
+  margin-top: $padding_med;
+  padding-left: $padding_med;
+  padding-right: $padding_med;
+}
+
+%make_row {
+  padding: 0;
+  margin-left: -$padding_med;
+  margin-right: -$padding_med;
+}
+
+[class$="-row"], .row {
+  @extend %make_row;
+}
+
+[class$="-row"]:after, .row:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+@mixin make_column( $c ) {
+  position: relative;
+  float: left;
+  padding-left: $padding_med;
+  padding-right: $padding_med;
+  width: (1/($c)) * 100%;
+}

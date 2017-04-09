@@ -1,0 +1,21 @@
+@import 'grid';
+@import '../variables/variables';
+
+.header-row {
+  margin-bottom: $padding_med;
+  
+  .logo {
+    @include make_column( 12/4 );
+
+    a {
+      float: left;
+      background-color: $green_dark;
+      color: $blue_dark;
+      text-align: center;
+    }
+  }
+
+  .navigation{
+    @include make_column( 12/8 );
+  }
+}

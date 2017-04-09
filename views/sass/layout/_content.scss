@@ -1,0 +1,74 @@
+@import 'grid';
+@import '../variables/variables';
+
+.mainContent {
+  @include make_column( 12/8 );
+
+/*  @media screen and (max-width: 1000px) {
+    @include make_column( 12/9 );
+  }
+
+  @media screen and (max-width: 900px) {
+    @include make_column( 12/12 );
+  } */
+}
+
+.sidebar {
+  @include make_column( 12/4 );
+
+/*  @media screen and (max-width: 1000px) {
+    @include make_column( 12/3 );
+  }
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  } */
+
+  .sidebar-row div { 
+    @include make_column( 4/4 );
+  }
+}
+
+.pageTitle {
+  @include make_column( 8/8 );
+  color: $blue_dark;
+}
+
+.animalList {
+  @include make_column( 8/2 );
+
+  a {
+    float: left;
+  }
+
+  img {
+    width: 100%;
+    padding: $padding_sml;
+  }
+}
+
+.animalInfo {
+  @include make_column( 8/8 );
+
+  img {
+    @include make_column( 8/3 );
+    border-radius: 20px;
+  }
+
+  .button {
+    @include make_column( 8/4 );
+  }
+
+  .about {
+    @include make_column( 8/8 );
+    
+    h3, p {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.animalGallery {
+//  @include make_column( 8/2 );
+}

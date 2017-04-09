@@ -1,0 +1,28 @@
+.navigation {
+
+  ul {
+    @include make_column( 8/8 );
+    margin-top: 0.6em;
+    margin-bottom: 0;
+  }
+
+  li {
+    @include make_column( 5/1 );
+    padding: 0;
+    padding-right: 1px;
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    line-height: 3em;
+    text-align: center;
+    background-color: $blue_dark;
+    color: $green_light;
+  }
+}
+
+.socialNav-row li {
+  float: right;
+}
